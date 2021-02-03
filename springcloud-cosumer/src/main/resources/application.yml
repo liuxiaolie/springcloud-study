@@ -1,0 +1,12 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:7001/eureka/,http://server2:7002/eureka/,http://server3:7003/eureka/
+  instance:
+    instance-id: springcloud-consumer-8082
+spring:
+  application:
+    name: springcloud-consumer

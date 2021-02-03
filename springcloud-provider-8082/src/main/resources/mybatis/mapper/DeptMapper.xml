@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxl.dao.DeptMapper">
+    <insert id="addDept" parameterType="Dept">
+        insert into dept(d_name,db_source) values (#{dName},DATABASE())
+    </insert>
+    <select id="findById" parameterType="long" resultType="com.lxl.entity.Dept">
+        select * from dept where dept_no=#{id}
+    </select>
+    <select id="findAll" resultType="Dept">
+        select * from dept
+    </select>
+</mapper>

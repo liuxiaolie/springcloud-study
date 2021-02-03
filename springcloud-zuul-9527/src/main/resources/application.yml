@@ -1,0 +1,30 @@
+server:
+  port: 9527
+
+
+spring:
+  application:
+    name: springcloud-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:7001/eureka/,ttp://server2:7002/eureka/,http://server3:7003/eureka/
+  instance:
+    instance-id: springcloud-zuul-9527
+info:
+  app.name: springCloud-zuul
+#zuul:
+#  ignored-services: /*
+#  zuul:
+#    prefix: /api   # 访问网关路径的前缀（在映射路径的前面，一般用于区别开发的版本）
+#    routes:
+#      zuul-service01: # 随意写的区分不同映射服务器的名称（只是区分不同的映射服务器）
+#        path: /zuul/**    # 自定义映射服务器路径的名称（相当于key，外部访问这个地址会映射到下面的service-id这个value值。然后从eureka服务列表找到对应服务名称，进而负载均衡的请求一个服务器）
+##        url: http://127.0.0.1:8093  # 这是写的固定映射url，可代替service-id。但是不能实现服务器的负载均衡和高可用，因为总是访问同一服务器
+#        service-id: springcloud-provider
+zuul:
+  routes:
+    mydept.serviceId: springcloud-provider
+    mydept.path: /mydept/**
+  ignored-services: "*" #忽略服务名，不让浏览器直接通过服务名调用
+  prefix: /api

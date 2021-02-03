@@ -1,0 +1,12 @@
+# Project exclude paths
+/springcloud-api/target/
+/springcloud-cosumer/target/
+/springcloud-cosumer-feign/target/
+/springcloud-eureka-7001/target/
+/springcloud-eureka-7002/target/
+/springcloud-eureka-7003/target/
+/springcloud-hystrix-dashboard/target/
+/springcloud-provider-8082/target/
+/springcloud-provider-8083/target/
+/springcloud-provider-8084/target/
+/springcloud-zuul-9527/target/

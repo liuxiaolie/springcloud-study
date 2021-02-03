@@ -1,0 +1,15 @@
+server:
+  port: 9002
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:7001/eureka/,http://server2:7002/eureka/,http://server3:7003/eureka/
+  instance:
+    instance-id: springcloud-consumer-feign
+spring:
+  application:
+    name: springcloud-consumer
+feign:
+  hystrix:
+    enabled: true #开启服务降级
