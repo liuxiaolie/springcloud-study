@@ -2,22 +2,25 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-api" />
+        <module name="springcloud-config-client-6002" />
         <module name="springcloud-zuul-9527" />
-        <module name="springcloud-cosumer" />
         <module name="springcloud-eureka-7003" />
         <module name="springcloud-eureka-7002" />
         <module name="springcloud-eureka-7001" />
-        <module name="springcloud-hystrix-dashboard" />
-        <module name="springcloud-cosumer-feign" />
         <module name="springcloud-provider-8082" />
         <module name="springcloud-provider-8081" />
         <module name="springcloud-provider-8084" />
         <module name="springcloud-provider-8083" />
+        <module name="springcloud-api" />
+        <module name="springcloud-cosumer" />
+        <module name="springcloud-hystrix-dashboard" />
+        <module name="springcloud-cosumer-feign" />
+        <module name="springcloud-config-server-6001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

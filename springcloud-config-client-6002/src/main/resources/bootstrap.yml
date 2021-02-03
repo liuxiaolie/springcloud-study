@@ -1,0 +1,8 @@
+# 系统级别的配置
+spring:
+  cloud:
+    config:
+      uri: http://localhost:6001 #配置中心服务端的地址
+      name: config-client # 服务端文件名称
+      label: master  # 服务端远程分支
+      profile: dev

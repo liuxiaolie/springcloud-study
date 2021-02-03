@@ -19,6 +19,8 @@
         <module>springcloud-cosumer-feign</module>
         <module>springcloud-hystrix-dashboard</module>
         <module>springcloud-zuul-9527</module>
+        <module>springcloud-config-server-6001</module>
+        <module>springcloud-config-client-6002</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
