@@ -6,7 +6,6 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 
 /**
  * @author ：liuxiaolie
- * @emial ：liuxiaolie@mskj.com
  * @date ：Created in 2021/2/2 21:22
  * @description：
  * @modified By：

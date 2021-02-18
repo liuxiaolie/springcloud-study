@@ -7,7 +7,6 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * @author ：liuxiaolie
- * @emial ：liuxiaolie@mskj.com
  * @date ：Created in 2021/2/2 09:31
  * @description：
  * @modified By：

@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * @author ：liuxiaolie
- * @emial ：liuxiaolie@mskj.com
  * @date ：Created in 2021/2/2 16:28
  * @description： hystrix 服务熔断：发生在服务端 ，作用于方法，当方法出现异常或者超时时调用备用方法以响应
  *                       服务降级  发生在客户端，作用于类，当服务端关闭是调用fallbackFactory指定的类

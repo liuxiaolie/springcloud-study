@@ -6,7 +6,6 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
  * @author ：liuxiaolie
- * @emial ：liuxiaolie@mskj.com
  * @date ：Created in 2021/2/2 22:21
  * @description：
  * @modified By：
